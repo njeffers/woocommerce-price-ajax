@@ -6,11 +6,19 @@
 
 		if( $(".single-product .input-text.qty").length > 0 ) {
 			ws_get_price();
-			$(".single-product .input-text.qty").on('change', ws_get_price);
 		}
 
+		$(".single-product .input-text.qty").on('change', ws_get_price);
+
+		jQuery('.woocommerce-cart div.woocommerce').on('change', 'input.qty', function(){
+			setTimeout(function() {
+				jQuery('[name="update_cart"]').trigger('click');
+			}, 300 );
+		});
 
 	});
+
+
 
 
 	/**
@@ -47,8 +55,8 @@
 function ws_get_price() {
 
 	// console.log( JSON.stringify(e));
-	qty = jQuery(".single-product .input-text.qty").val();
-	console.log(ws_woocommerce.product_id);
+	qty = jQuery(".input-text.qty").val();
+	// console.log(ws_woocommerce.product_id);
 
 	if( qty ) {
 		jQuery.ajax({

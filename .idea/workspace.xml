@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2f80e5d3-65d9-4c0a-a8e4-dbc9408c410f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woocommerce-price-ajax/admin/class-woocommerce-price-ajax-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/woocommerce-price-ajax/admin/class-woocommerce-price-ajax-admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woocommerce-price-ajax/includes/class-woocommerce-price-ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/woocommerce-price-ajax/includes/class-woocommerce-price-ajax.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/woocommerce-price-ajax/public/class-woocommerce-price-ajax-public.php" beforeDir="false" afterPath="$PROJECT_DIR$/woocommerce-price-ajax/public/class-woocommerce-price-ajax-public.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/woocommerce-price-ajax/public/js/woocommerce-price-ajax-public.js" beforeDir="false" afterPath="$PROJECT_DIR$/woocommerce-price-ajax/public/js/woocommerce-price-ajax-public.js" afterDir="false" />
     </list>
@@ -134,7 +132,7 @@
       <updated>1581821157535</updated>
       <workItem from="1581821158796" duration="1060000" />
       <workItem from="1581827994681" duration="2914000" />
-      <workItem from="1581832986028" duration="6579000" />
+      <workItem from="1581832986028" duration="9054000" />
     </task>
     <servers />
   </component>
