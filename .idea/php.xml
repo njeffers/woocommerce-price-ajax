@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/includes/vendor/composer" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-attached-posts/.git" />
+      <path value="$PROJECT_DIR$/includes/vendor/redux-framework/tests" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-attached-posts/js" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-extensions/assets" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-attached-posts/css" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-extensions/.git" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-extensions/data" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-extensions/languages" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2/languages" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-extensions/includes" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2/includes" />
+      <path value="$PROJECT_DIR$/includes/vendor/redux-framework/ReduxCore" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2/images" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2/js" />
+      <path value="$PROJECT_DIR$/includes/vendor/yahnis-elsts/plugin-update-checker" />
+      <path value="$PROJECT_DIR$/includes/vendor/redux-framework/sample" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2/css" />
+      <path value="$PROJECT_DIR$/includes/vendor/redux-framework/redux-vendor-support" />
+    </include_path>
+  </component>
+</project>

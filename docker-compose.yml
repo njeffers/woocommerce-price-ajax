@@ -1,0 +1,97 @@
+version: "3"
+
+services:
+  wordpress:
+    image: "wordpress:${WP_VERSION:-5.2.1}-php${PHP_VERSION:-7.3}-apache"
+#    image: "wordpress:latest"
+    environment:
+#      VIRTUAL_HOST: "localhost"
+      VIRTUAL_HOST: "${DOCKER_DEV_DOMAIN:-localhost}"
+      WORDPRESS_DB_HOST: "db:3306"
+      WORDPRESS_DB_NAME: "wordpress"
+      WORDPRESS_DB_PASSWORD: "wordpress"
+      WORDPRESS_DB_USER: "wordpress"
+    depends_on:
+      - "db"
+    networks:
+      - "front"
+      - "back"
+    volumes:
+#      - "wp:/var/www/html:rw"
+      - "./wp/:/var/www/html/" ## needed for permissions or we won't be able to update WP
+      - "./woocommerce-price-ajax:/var/www/html/wp-content/plugins/woocommerce-price-ajax:rw"
+#      - "../wordpress-shuttle-child:/var/www/html/wp-content/themes/wordpress-shuttle-child:rw"
+      - "./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini"
+
+  php:
+    build:
+      context: .
+      args:
+        - WITH_XDEBUG=true
+    env_file: .env
+    volumes:
+      - .:/var/www/app:rw
+
+
+  wp-cli:
+    image: "wordpress:cli-${WP_CLI_VERSION:-2.2.0}-php${PHP_VERSION:-7.3}"
+    environment:
+      - APACHE_RUN_USER="www-data"
+      - APACHE_RUN_GROUP="www-data"
+    depends_on:
+      - "db"
+    networks:
+      - "back"
+    volumes:
+      - "./wp:/var/www/html:rw"
+      - "./bin/install-wp.sh:/usr/local/bin/install-wp:rw"
+      - "./woocommerce-price-ajax:/var/www/html/wp-content/plugins/woocommerce-price-ajax:rw"
+  db:
+    image: "mariadb:10.2"
+    environment:
+      MYSQL_ROOT_PASSWORD: wordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    volumes:
+      - "./db_data:/var/lib/mysql"
+    networks:
+      - "back"
+  proxy:
+    image: "jwilder/nginx-proxy:alpine"
+    ports:
+      - "80:80"
+    networks:
+      front:
+        aliases:
+          - "${DOCKER_DEV_DOMAIN:-localhost}"
+#          - "localhost"
+    volumes:
+      - "/var/run/docker.sock:/tmp/docker.sock:ro"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    links:
+      - db:mysql
+    ports:
+      - "8181:80"
+    networks:
+      - "back"
+    environment:
+      MYSQL_USERNAME: wordpress
+      MYSQL_PORT_3306_TCP_ADDR: db
+      MYSQL_ROOT_PASSWORD: wordpress
+
+  composer:
+#    restart: 'always'
+    image: library/composer:latest
+    command: install
+    volumes:
+      - .:/app
+
+networks:
+  front: {}
+  back: {}
+
+volumes:
+  wp: {}

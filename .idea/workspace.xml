@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2f80e5d3-65d9-4c0a-a8e4-dbc9408c410f" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/includes/vendor/composer" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-attached-posts/.git" />
+      <path value="$PROJECT_DIR$/includes/vendor/redux-framework/tests" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-attached-posts/js" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-extensions/assets" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-attached-posts/css" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-extensions/.git" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-extensions/data" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-extensions/languages" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2/languages" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2-extensions/includes" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2/includes" />
+      <path value="$PROJECT_DIR$/includes/vendor/redux-framework/ReduxCore" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2/images" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2/js" />
+      <path value="$PROJECT_DIR$/includes/vendor/yahnis-elsts/plugin-update-checker" />
+      <path value="$PROJECT_DIR$/includes/vendor/redux-framework/sample" />
+      <path value="$PROJECT_DIR$/includes/vendor/cmb2/css" />
+      <path value="$PROJECT_DIR$/includes/vendor/redux-framework/redux-vendor-support" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1Xs3pTy2eWvhyYiPlz1uCwrWmDT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/woocommerce-price-ajax" />
+    <property name="settings.editor.selected.configurable" value="DockerRegistry" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml.wp-cli: Compose Deployment">
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.wp-cli: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="wp-cli" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.wp-cli: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4599de20" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4599de20" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@5e95ae4e" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f80e5d3-65d9-4c0a-a8e4-dbc9408c410f" name="Default Changelist" comment="" />
+      <created>1581821157535</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581821157535</updated>
+      <workItem from="1581821158796" duration="1060000" />
+      <workItem from="1581827994681" duration="2914000" />
+      <workItem from="1581832986028" duration="1629000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
