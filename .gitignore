@@ -1,2 +1,3 @@
-/wp
-/db_data
+wp/
+db_data/
+includes/

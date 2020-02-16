@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f80e5d3-65d9-4c0a-a8e4-dbc9408c410f" name="Default Changelist" comment="" />
+    <list default="true" id="2f80e5d3-65d9-4c0a-a8e4-dbc9408c410f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +47,7 @@
   <component name="ProjectId" id="1Xs3pTy2eWvhyYiPlz1uCwrWmDT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/woocommerce-price-ajax" />
     <property name="settings.editor.selected.configurable" value="DockerRegistry" />
@@ -127,7 +132,7 @@
       <updated>1581821157535</updated>
       <workItem from="1581821158796" duration="1060000" />
       <workItem from="1581827994681" duration="2914000" />
-      <workItem from="1581832986028" duration="1629000" />
+      <workItem from="1581832986028" duration="1773000" />
     </task>
     <servers />
   </component>
