@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f80e5d3-65d9-4c0a-a8e4-dbc9408c410f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woocommerce-price-ajax/public/class-woocommerce-price-ajax-public.php" beforeDir="false" afterPath="$PROJECT_DIR$/woocommerce-price-ajax/public/class-woocommerce-price-ajax-public.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woocommerce-price-ajax/public/js/woocommerce-price-ajax-public.js" beforeDir="false" afterPath="$PROJECT_DIR$/woocommerce-price-ajax/public/js/woocommerce-price-ajax-public.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/woocommerce-price-ajax/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/woocommerce-price-ajax/README.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +130,7 @@
       <updated>1581821157535</updated>
       <workItem from="1581821158796" duration="1060000" />
       <workItem from="1581827994681" duration="2914000" />
-      <workItem from="1581832986028" duration="10004000" />
+      <workItem from="1581832986028" duration="10562000" />
     </task>
     <servers />
   </component>
