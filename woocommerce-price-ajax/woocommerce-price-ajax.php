@@ -8,14 +8,14 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://example.com
+ * @link              http://nickjeffers.com
  * @since             1.0.0
  * @package           Woocommerce_Price_Ajax
  *
  * @wordpress-plugin
  * Plugin Name:       Woocommerce Price AJAX
  * Plugin URI:        http://nickjeffers.com
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Visually updates product and cart pricing when quantities are changed.
  * Version:           1.0.0
  * Author:            Nick Jeffers
  * Author URI:        http://nickjeffers.com

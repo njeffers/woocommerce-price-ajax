@@ -96,21 +96,17 @@ class Woocommerce_Price_Ajax_Public {
 		 * class.
 		 */
 
-		$localized_array['baseurl'] = esc_url( home_url() );
 
-		if( is_singular( 'product' ) ) {
-
-			$localized_array['product_id'] =  __( get_the_ID(), 'wordpress-shuttle' );
-
-		} elseif( 9 == get_the_ID() ){
-			// cart
-			$localized_array['product_id'] = 7;
-
-		}
 
 		wp_enqueue_script( $this->woocommerce_price_ajax, plugin_dir_url( __FILE__ ) . 'js/woocommerce-price-ajax-public.js', array( 'jquery' ), $this->version, false );
-		wp_localize_script( $this->woocommerce_price_ajax, 'ws_woocommerce', $localized_array );
 
+
+		if( is_singular( 'product' ) ) {
+			$localized_array['baseurl'] = esc_url( home_url() );
+			$localized_array['product_id'] =  __( get_the_ID(), 'wordpress-shuttle' );
+			wp_localize_script( $this->woocommerce_price_ajax, 'ws_woocommerce', $localized_array );
+
+		}
 
 	}
 

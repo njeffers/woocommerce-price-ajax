@@ -4,14 +4,17 @@
 	$(document).ready( function(){
 
 
+		// This is called out of the gate, as the price doesn't accurately show after adding to cart and getting redirected back to the product page
 		if( $(".single-product .input-text.qty").length > 0 ) {
 			ws_get_price();
 		}
 
+		// if we change the qty on a single product page
 		$(".single-product .input-text.qty").on('change', ws_get_price);
 
+		// if we update the qty on the cart page, let's force a cart update by triggering a button click
 		jQuery('.woocommerce-cart div.woocommerce').on('change', 'input.qty', function(){
-			setTimeout(function() {
+			setTimeout( function() {
 				jQuery('[name="update_cart"]').trigger('click');
 			}, 300 );
 		});
