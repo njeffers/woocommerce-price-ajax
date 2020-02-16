@@ -12,9 +12,11 @@ wp core install \
 # Update permalink structure.
 wp option update permalink_structure "/%year%/%monthnum%/%postname%/" --skip-themes --skip-plugins
 
-# Activate plugin.
+# Activate plugins.
 wp plugin install woocommerce
+#wp plugin activate woocommerce
 wp plugin activate woocommerce-price-ajax
 
+# Delete the default plugins.
 wp plugin delete akismet
 wp plugin delete hello

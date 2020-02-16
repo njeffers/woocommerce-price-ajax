@@ -80,12 +80,12 @@ services:
       MYSQL_PORT_3306_TCP_ADDR: db
       MYSQL_ROOT_PASSWORD: wordpress
 
-  composer:
-#    restart: 'always'
-    image: library/composer:latest
-    command: install
-    volumes:
-      - .:/app
+#  composer:
+##    restart: 'always'
+#    image: library/composer:latest
+#    command: install
+ #   volumes:
+ #     - .:/app
 
 networks:
   front: {}

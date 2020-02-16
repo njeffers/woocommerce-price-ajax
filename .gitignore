@@ -3,3 +3,4 @@ db_data/
 includes/
 .idea/
 composer.lock
+/vendor/

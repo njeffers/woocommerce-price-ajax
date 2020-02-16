@@ -1,6 +1,6 @@
 {
-  "name": "wordpress-shuttle/wordpress-shuttle",
-  "type": "wordpress-theme",
+  "name": "njeffers/woocommerce-price-ajax",
+  "type": "wordpress-plugin",
   "authors": [
     {
       "name": "njeffers",
