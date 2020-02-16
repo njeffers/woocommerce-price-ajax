@@ -100,4 +100,46 @@ class Woocommerce_Price_Ajax_Admin {
 
 	}
 
+
+	public function woocommerce_price_ajax_get_price_endpoint(){
+
+		register_rest_route( 'shuttle/v1', '/getPrice/', array(
+//		register_rest_route( 'shuttle/v1', '/price/(?P<id>\d+)/(?P<qty>\d+)', array(
+			'methods' => 'POST',
+			'callback' => array( $this, 'my_awesome_func' ),
+			'args' => array(
+				'product_id' => array(
+					'validate_callback' => function($param, $request, $key) {
+						return is_numeric( $param );
+					}
+				),
+				'product_qty' => array(
+					'validate_callback' => function($param, $request, $key) {
+						return is_numeric( $param );
+					}
+				),
+			),
+		) );
+
+	}
+
+
+	public function my_awesome_func( WP_REST_Request $request ) {
+
+		$product_id = $request->get_param( 'product_id' );
+		$product_qty = $request->get_param( 'product_qty' );
+
+		$product = wc_get_product( $product_id );
+
+		$price = $product_qty * $product->get_price();
+
+		return apply_filters( 'formatted_woocommerce_price', number_format( $price, wc_get_price_decimals(),
+			wc_get_price_decimal_separator(), wc_get_price_thousand_separator() ),
+			$price,
+			wc_get_price_decimals(),
+			wc_get_price_decimal_separator(), wc_get_price_thousand_separator() );
+
+	}
+
+
 }

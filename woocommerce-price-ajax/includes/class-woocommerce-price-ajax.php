@@ -157,6 +157,9 @@ class Woocommerce_Price_Ajax {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
+//		$this->loader->add_action( 'rest_api_init', $plugin_admin, array( $this, 'woocommerce_price_ajax_get_price_endpoint' )  );
+		$this->loader->add_action( 'rest_api_init', $plugin_admin, 'woocommerce_price_ajax_get_price_endpoint' );
+
 	}
 
 	/**
@@ -173,7 +176,14 @@ class Woocommerce_Price_Ajax {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
+//		$this->loader->add_action( 'rest_api_init', $plugin_public, 'woocommerce_price_ajax_get_price_endpoint' );
+
+
+//		add_action( 'rest_api_init',  );
+
 	}
+
+
 
 	/**
 	 * Run the loader to execute all of the hooks with WordPress.
