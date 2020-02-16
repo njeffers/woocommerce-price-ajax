@@ -21,14 +21,14 @@ services:
       - "./woocommerce-price-ajax:/var/www/html/wp-content/plugins/woocommerce-price-ajax:rw"
       - "./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini"
 
-  php:
-    build:
-      context: .
-      args:
-        - WITH_XDEBUG=true
-    env_file: .env
-    volumes:
-      - .:/var/www/app:rw
+#  php:
+#    build:
+#      context: .
+#      args:
+#        - WITH_XDEBUG=true
+#    env_file: .env
+#    volumes:
+#      - .:/var/www/app:rw
 
 
   wp-cli:
@@ -67,18 +67,18 @@ services:
     volumes:
       - "/var/run/docker.sock:/tmp/docker.sock:ro"
 
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
-    links:
-      - db:mysql
-    ports:
-      - "8181:80"
-    networks:
-      - "back"
-    environment:
-      MYSQL_USERNAME: wordpress
-      MYSQL_PORT_3306_TCP_ADDR: db
-      MYSQL_ROOT_PASSWORD: wordpress
+#  phpmyadmin:
+#    image: phpmyadmin/phpmyadmin:latest
+#    links:
+#      - db:mysql
+#    ports:
+#      - "8181:80"
+#    networks:
+#      - "back"
+#    environment:
+#      MYSQL_USERNAME: wordpress
+#      MYSQL_PORT_3306_TCP_ADDR: db
+#      MYSQL_ROOT_PASSWORD: wordpress
 
 #  composer:
 ##    restart: 'always'
