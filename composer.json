@@ -83,85 +83,9 @@
         ],
 
 
-
-        "do-it-off": [
-            "@docker-up",
-            "docker-compose run --rm wp-cli install-wp",
-            "sleep 60s",
-            "docker-compose run --rm wp-cli install-wp --path=wordpress",
-            "docker-compose run --rm wp-cli wp scaffold theme-tests wordpress-shuttle --force",
-            "docker-compose -f docker-compose.yml -f docker-compose.phpunit.yml up -d",
-            "docker-compose -f docker-compose.phpunit.yml run --rm wordpress_phpunit /app/bin/install-wp-tests.sh wordpress_test root '' mysql_phpunit latest true",
-            "sleep 30s",
-            "docker-compose -f docker-compose.phpunit.yml run --rm wordpress_phpunit phpunit"
-        ],
-
-
-
-
-
-        "post-install-cmd2": [
-            "npm install --save-dev autoprefixer browser-sync css-mqpacker cssnano gulp gulp-concat gulp-deporder gulp-imagemin gulp-newer gulp-notify gulp-postcss gulp-sass gulp-shell gulp-strip-debug gulp-uglify gulp-util postcss-assets gulp-zip"
-        ],
-        "post-update-cmd2": [
-            "npm update"
-        ],
-        "build": [
-            "gulp build && gulp zip"
-        ],
-        "build-containers": [
-            "docker-compose up -d"
-        ],
-
-        "build-wp": [
-            "composer build-containers && sleep 10 && docker-compose run --rm wp-cli install-wp"
-        ],
-        "watch": [
-            "gulp"
-        ],
-        "make-env": [
-            "composer install && composer build-wp && composer watch"
-        ],
         "test": [
-            "vendor/bin/phpunit"
-        ],
-
-        "testdox2": [
-            "vendor/bin/phpunit --testdox"
-        ],
-        "run-scaffolding": [
-            "wp scaffold theme-tests wordpress-shuttle-child"
-        ],
-        "test-wp-setup": [
-            "bash bin/install-wp-tests.sh wordpress_test root root 127.0.0.1:3306 latest"
-        ],
-        "phpcs": "phpcs --standard=phpcs.xml.dist",
-
-        "do-it-old": [
-            "@kill-containers",
-            "docker-compose up -d",
-            "docker cp wordpress_shuttle:/wordpress-shuttle/ .",
-            "sleep 60s",
-            "docker-compose run --rm wp-cli install-wp --path=wordpress",
-            "docker-compose run --rm wp-cli wp scaffold theme-tests wordpress-shuttle --force",
-            "docker-compose -f docker-compose.yml -f docker-compose.phpunit.yml up -d",
-            "docker-compose -f docker-compose.phpunit.yml run --rm wordpress_phpunit /app/bin/install-wp-tests.sh wordpress_test root '' mysql_phpunit latest true",
-            "docker-compose -f docker-compose.phpunit.yml run --rm wordpress_phpunit phpunit"
-        ],
-
-        "do-it-old2": [
-            "docker-compose up -d",
-            "docker cp wordpress_shuttle:/wordpress-shuttle/ .",
-            "sleep 60s",
-            "docker-compose run --rm wp-cli install-wp --path=wordpress",
-            "docker-compose run --rm wp-cli wp scaffold theme-tests wordpress-shuttle --force",
-            "docker-compose -f docker-compose.yml -f docker-compose.phpunit.yml up -d",
-            "docker-compose -f docker-compose.phpunit.yml run --rm wordpress_phpunit /app/bin/install-wp-tests.sh wordpress_test root '' mysql_phpunit latest true",
-            "sleep 30s",
             "docker-compose -f docker-compose.phpunit.yml run --rm wordpress_phpunit phpunit"
         ]
-
-
 
     }
 }

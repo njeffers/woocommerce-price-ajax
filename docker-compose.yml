@@ -17,10 +17,8 @@ services:
       - "front"
       - "back"
     volumes:
-#      - "wp:/var/www/html:rw"
       - "./wp/:/var/www/html/" ## needed for permissions or we won't be able to update WP
       - "./woocommerce-price-ajax:/var/www/html/wp-content/plugins/woocommerce-price-ajax:rw"
-#      - "../wordpress-shuttle-child:/var/www/html/wp-content/themes/wordpress-shuttle-child:rw"
       - "./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini"
 
   php:
