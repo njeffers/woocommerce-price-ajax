@@ -14,3 +14,8 @@ Also updates the cart without the need to click the update cart button
 ```docker-compose run --rm wp-cli install-wp```
 
 #### 4) Login username/password is wordpress/wordpress
+
+
+## Basic Installation
+
+#### Download the latest 'woocommerce-price-ajax.zip' file from https://github.com/njeffers/woocommerce-price-ajax/releases/latest and unpack it in your /wp-content/plugins/ folder.
