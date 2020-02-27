@@ -1,7 +1,7 @@
 # woocommerce-price-ajax
  
 This plugin allows for a realtime update of pricing on Woocommerce product pages. This is essentially product price * quantity.
-Also updates the cart without the need to click the update cart button
+Also updates the cart without the need to click the update cart button. Initially created as a simple Docker example for my fellow developer and good friend Chad.
 
 ## Docker Setup
 
