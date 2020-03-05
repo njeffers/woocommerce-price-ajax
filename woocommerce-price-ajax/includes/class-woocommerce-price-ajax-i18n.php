@@ -22,7 +22,7 @@
  * @since      1.0.0
  * @package    Woocommerce_Price_Ajax
  * @subpackage Woocommerce_Price_Ajax/includes
- * @author     Your Name <email@example.com>
+ * @author     Nick Jeffers <nick@nickjeffers.com>
  */
 class Woocommerce_Price_Ajax_i18n {
 

@@ -18,7 +18,7 @@
  *
  * @package    Woocommerce_Price_Ajax
  * @subpackage Woocommerce_Price_Ajax/public
- * @author     Your Name <email@example.com>
+ * @author     Nick Jeffers <nick@nickjeffers.com>
  */
 class Woocommerce_Price_Ajax_Public {
 
@@ -60,21 +60,7 @@ class Woocommerce_Price_Ajax_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Woocommerce_Price_Ajax_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Woocommerce_Price_Ajax_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
 		wp_enqueue_style( $this->woocommerce_price_ajax, plugin_dir_url( __FILE__ ) . 'css/woocommerce-price-ajax-public.css', array(), $this->version, 'all' );
-
 	}
 
 	/**
@@ -83,20 +69,6 @@ class Woocommerce_Price_Ajax_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Woocommerce_Price_Ajax_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Woocommerce_Price_Ajax_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
-
 
 		wp_enqueue_script( $this->woocommerce_price_ajax, plugin_dir_url( __FILE__ ) . 'js/woocommerce-price-ajax-public.js', array( 'jquery' ), $this->version, false );
 
@@ -109,8 +81,5 @@ class Woocommerce_Price_Ajax_Public {
 		}
 
 	}
-
-
-
 
 }

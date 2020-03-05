@@ -18,7 +18,7 @@
  *
  * @package    Woocommerce_Price_Ajax
  * @subpackage Woocommerce_Price_Ajax/admin
- * @author     Your Name <email@example.com>
+ * @author     Nick Jeffers <nick@nickjeffers.com>
  */
 class Woocommerce_Price_Ajax_Admin {
 
